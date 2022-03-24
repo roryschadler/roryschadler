@@ -1,10 +1,10 @@
-import { CssBaseline, ThemeProvider } from '@mui/material';
 import React from 'react';
-import './App.css';
 
-import { theme } from './theme';
+import { CssBaseline, ThemeProvider } from '@mui/material';
 
-function App() {
+import theme from './theme';
+
+function App(): React.ReactElement {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />

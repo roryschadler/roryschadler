@@ -4,23 +4,22 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
-let themeOptions = createTheme({
-  palette: {
-    primary: {
-      main: '#145014',
+export default responsiveFontSizes(
+  createTheme({
+    palette: {
+      primary: {
+        main: '#145014',
+      },
+      secondary: {
+        main: '#052d05',
+        dark: '#447d3e',
+      },
+      info: {
+        main: '#267aba',
+      },
     },
-    secondary: {
-      main: '#052d05',
+    typography: {
+      fontFamily: 'Roboto',
     },
-    info: {
-      main: '#267aba',
-    },
-  },
-  typography: {
-    fontFamily: 'Roboto',
-  },
-});
-
-themeOptions = responsiveFontSizes(themeOptions);
-
-export const theme = themeOptions;
+  })
+);
