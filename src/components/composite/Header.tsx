@@ -1,14 +1,13 @@
 import React from 'react';
 import {
   AppBar,
-  Toolbar,
   Box,
   IconButton,
-  Avatar,
+  Toolbar,
   useScrollTrigger,
 } from '@mui/material';
 
-import headshot from '../assets/rory_schadler.png';
+import Avatar from '../atomic/Avatar';
 
 type Props = {
   children: React.ReactElement;
@@ -36,7 +35,7 @@ function Header(): React.ReactElement {
           </Box>
           <Box sx={{ flexGrow: 0 }}>
             <IconButton>
-              <Avatar alt="Rory Schadler" src={headshot}></Avatar>
+              <Avatar />
             </IconButton>
           </Box>
         </Toolbar>

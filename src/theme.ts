@@ -20,6 +20,11 @@ export default responsiveFontSizes(
     },
     typography: {
       fontFamily: 'Roboto',
+      h6: {
+        fontSize: '2rem',
+        marginTop: '0.8rem',
+        marginBottom: '0.8rem',
+      },
     },
   })
 );
