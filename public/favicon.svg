@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="400.00003"
+   height="400.00003"
+   viewBox="0 0 105.83334 105.83334"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (b8e25be8, 2022-02-05)"
+   sodipodi:docname="favicon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     units="px"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-nodes="true"
+     inkscape:zoom="1.9171058"
+     inkscape:cx="206.82218"
+     inkscape:cy="221.42753"
+     inkscape:window-width="1640"
+     inkscape:window-height="1081"
+     inkscape:window-x="67"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1">
+    <sodipodi:guide
+       position="100.54167,35.453996"
+       orientation="-1,0"
+       id="guide6281"
+       inkscape:label=""
+       inkscape:locked="false"
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="-14.725524,5.2916747"
+       orientation="0,1"
+       id="guide8035"
+       inkscape:label=""
+       inkscape:locked="false"
+       inkscape:color="rgb(0,0,255)" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-46.608246,-59.876286)">
+    <rect
+       style="fill:#145014;fill-opacity:1;fill-rule:evenodd;stroke-width:0.264583"
+       id="rect31"
+       width="105.83333"
+       height="105.83334"
+       x="46.608246"
+       y="59.876286"
+       ry="12.859534" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:63.5px;line-height:1.05;font-family:'Josefin Sans';-inkscape-font-specification:'Josefin Sans Bold';fill:#000000;fill-opacity:1;stroke-width:0.264583"
+       x="149.75243"
+       y="159.90996"
+       id="text3636"><tspan
+         sodipodi:role="line"
+         id="tspan3634"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:63.5px;font-family:'Josefin Sans';-inkscape-font-specification:'Josefin Sans Bold';text-align:end;text-anchor:end;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+         x="149.75243"
+         y="159.90996">RS</tspan></text>
+  </g>
+</svg>
