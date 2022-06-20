@@ -1,13 +1,15 @@
 import { Container } from '@mui/material';
 import React from 'react';
-import AboutSection from './AboutSection';
-import ExperienceSection from './ExperienceSection';
+import About from './About';
+import Education from './Education';
+import Experience from './Experience';
 
 function Main(): React.ReactElement {
   return (
     <Container maxWidth="sm" component={'main'}>
-      <AboutSection />
-      <ExperienceSection />
+      <About />
+      <Experience />
+      <Education />
     </Container>
   );
 }

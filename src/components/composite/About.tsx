@@ -9,7 +9,7 @@ const bodyTypographyProps: TypographyProps = {
   },
 };
 
-const AboutSection = () => {
+const About = () => {
   return (
     <section>
       <Typography variant="h6" component="h2">
@@ -46,4 +46,4 @@ const AboutSection = () => {
   );
 };
 
-export default AboutSection;
+export default About;
