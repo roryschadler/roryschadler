@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   AppBar,
+  Grid,
   Stack,
   Toolbar,
   Typography,
@@ -31,24 +32,29 @@ const ElevationScroll = ({ children }: Props) => {
 const HeaderBar = (): React.ReactElement => {
   return (
     <ElevationScroll>
-      <AppBar position="sticky" enableColorOnDark>
+      <AppBar position="sticky" enableColorOnDark aria-label="Header Bar">
         <Toolbar>
-          <Stack
+          <Grid
+            container
             direction="row"
             justifyContent="space-between"
+            spacing={1}
             alignItems="center"
-            sx={{ flexGrow: 1 }}
           >
-            <Typography component="h1" variant="h4" fontWeight="500">
-              Rory Schadler
-            </Typography>
-            <Stack direction="row-reverse" alignItems="center">
-              <Avatar />
-              <LinkedInButton />
-              <GitHubButton />
-              <DarkModeButton />
-            </Stack>
-          </Stack>
+            <Grid item xs={6}>
+              <Typography component="h1" variant="h4" fontWeight="500">
+                Rory Schadler
+              </Typography>
+            </Grid>
+            <Grid item xs={6}>
+              <Stack direction="row-reverse" alignItems="center">
+                <Avatar />
+                <LinkedInButton />
+                <GitHubButton />
+                <DarkModeButton />
+              </Stack>
+            </Grid>
+          </Grid>
         </Toolbar>
       </AppBar>
     </ElevationScroll>

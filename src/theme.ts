@@ -35,7 +35,6 @@ const getTheme = (mode: PaletteMode) =>
         MuiIconButton: {
           defaultProps: {
             color: 'inherit',
-            size: 'large',
           },
         },
         MuiLink: {

@@ -1,16 +1,25 @@
-import { DarkMode, LightMode } from '@mui/icons-material';
-import { IconButton } from '@mui/material';
 import React from 'react';
-import { ColorModeContext, ToggleColorModeContext } from '../../App';
+import { DarkMode, LightMode } from '@mui/icons-material';
+import { IconButton, Tooltip, useMediaQuery, useTheme } from '@mui/material';
+import { ToggleColorModeContext } from '../../App';
 
 const DarkModeButton = () => {
   const toggleColorMode = React.useContext(ToggleColorModeContext);
-  const colorMode = React.useContext(ColorModeContext);
+  const theme = useTheme();
 
   return (
-    <IconButton onClick={toggleColorMode.toggleColorMode}>
-      {colorMode === 'light' ? <LightMode /> : <DarkMode />}
-    </IconButton>
+    <Tooltip
+      title={`Switch to ${
+        theme.palette.mode === 'light' ? 'dark' : 'light'
+      } mode`}
+    >
+      <IconButton
+        onClick={toggleColorMode.toggleColorMode}
+        size={useMediaQuery(theme.breakpoints.down('sm')) ? 'medium' : 'large'}
+      >
+        {theme.palette.mode === 'light' ? <LightMode /> : <DarkMode />}
+      </IconButton>
+    </Tooltip>
   );
 };
 

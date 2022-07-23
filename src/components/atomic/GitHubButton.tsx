@@ -1,12 +1,23 @@
-import { GitHub } from '@mui/icons-material';
-import { IconButton, Link, Tooltip } from '@mui/material';
 import React from 'react';
+import { GitHub } from '@mui/icons-material';
+import {
+  IconButton,
+  Link,
+  Tooltip,
+  useMediaQuery,
+  useTheme,
+} from '@mui/material';
 
 const GitHubButton = () => {
+  const theme = useTheme();
   return (
     <Link target="_blank" href="https://github.com/roryschadler">
       <Tooltip title="GitHub">
-        <IconButton>
+        <IconButton
+          size={
+            useMediaQuery(theme.breakpoints.down('sm')) ? 'medium' : 'large'
+          }
+        >
           <GitHub fontSize="inherit" />
         </IconButton>
       </Tooltip>
