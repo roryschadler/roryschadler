@@ -1,6 +1,12 @@
-import { ItemInterface } from '../components/atomic/Item';
+import { ItemAriaProps, ItemProps } from '../components/atomic/Item';
 
-const education: ItemInterface[] = [
+const ariaProps: ItemAriaProps = {
+  title: 'School',
+  subtitle: 'Location',
+  subItems: 'Degree, Program, or Award',
+};
+
+const education: ItemProps[] = [
   {
     title: 'Dartmouth College',
     subtitle: 'Hanover, NH',
@@ -27,6 +33,7 @@ const education: ItemInterface[] = [
     ],
     startDate: 'September 2017',
     endDate: 'June 2021',
+    ariaProps,
   },
   {
     title: 'Beijing Normal University',
@@ -38,6 +45,7 @@ const education: ItemInterface[] = [
     ],
     startDate: 'September 2019',
     endDate: 'December 2019',
+    ariaProps,
   },
 ];
 

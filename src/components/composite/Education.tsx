@@ -6,8 +6,8 @@ import Item from '../atomic/Item';
 
 const Education = () => {
   return (
-    <section>
-      <Typography variant="h6" component="h2">
+    <section aria-labelledby="eduHeader">
+      <Typography variant="h6" component="h2" id="eduHeader">
         Education
       </Typography>
       {educations.map((edu, index) => (

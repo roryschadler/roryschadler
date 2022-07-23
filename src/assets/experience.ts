@@ -1,6 +1,12 @@
-import { ItemInterface } from '../components/atomic/Item';
+import { ItemAriaProps, ItemProps } from '../components/atomic/Item';
 
-const experiences: ItemInterface[] = [
+const ariaProps: ItemAriaProps = {
+  title: 'Company',
+  subtitle: 'Location',
+  subItems: 'Role',
+};
+
+const experiences: ItemProps[] = [
   {
     title: 'Zapata Computing',
     subtitle: 'Boston, MA',
@@ -13,6 +19,7 @@ const experiences: ItemInterface[] = [
       },
     ],
     startDate: 'March 2022',
+    ariaProps,
   },
   {
     title: 'MaterialsMine',
@@ -22,7 +29,7 @@ const experiences: ItemInterface[] = [
         title:
           'Associate in Research, Duke University Pratt School of Engineering',
         text: [
-          'Continuing work on the MaterialsMine application, helping transition the application to a containerized and production-ready environment. Projects include front-end web development in Vue.js and migrating static views to reactive components',
+          'Continued work on the MaterialsMine application, helping transition the application to a containerized and production-ready environment. Projects included front-end web development in Vue.js and migrating static views to reactive components',
         ],
         startDate: 'December 2021',
         endDate: 'March 2022',
@@ -39,6 +46,7 @@ const experiences: ItemInterface[] = [
     ],
     startDate: 'January 2020',
     endDate: 'March 2022',
+    ariaProps,
   },
 ];
 

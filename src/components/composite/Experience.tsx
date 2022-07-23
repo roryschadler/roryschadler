@@ -7,8 +7,8 @@ import experiences from '../../assets/experience';
 
 const Experience = () => {
   return (
-    <section>
-      <Typography variant="h6" component="h2">
+    <section aria-labelledby="expHeader">
+      <Typography variant="h6" component="h2" id="expHeader">
         Experience
       </Typography>
       {experiences.map((exp, index) => (

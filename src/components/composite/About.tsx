@@ -11,8 +11,8 @@ const bodyTypographyProps: TypographyProps = {
 
 const About = () => {
   return (
-    <section>
-      <Typography variant="h6" component="h2">
+    <section aria-labelledby="aboutHeader">
+      <Typography variant="h6" component="h2" id="aboutHeader">
         About Me
       </Typography>
       <Typography {...bodyTypographyProps}>
