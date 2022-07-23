@@ -19,6 +19,9 @@ const getTheme = (mode: PaletteMode) =>
           main: '#267aba',
         },
         mode,
+        background: {
+          default: mode === 'light' ? '#ffffff' : '#121212',
+        },
       },
       typography: {
         fontFamily: 'Roboto',
