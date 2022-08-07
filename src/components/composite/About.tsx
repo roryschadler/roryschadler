@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography, TypographyProps } from '@mui/material';
+import { Link, Typography, TypographyProps } from '@mui/material';
 
 const bodyTypographyProps: TypographyProps = {
   variant: 'body1',
@@ -25,8 +25,14 @@ const About = () => {
       </Typography>
       <Typography {...bodyTypographyProps}>
         I&apos;m currently working as a Front End Engineer for{' '}
-        <a href="https://www.zapatacomputing.com/">Zapata Computing</a>, in
-        Boston, Massachusetts. On the Quantum Platform team I contribute to
+        <Link
+          variant="inherit"
+          target="_blank"
+          href="https://www.zapatacomputing.com/"
+        >
+          Zapata Computing
+        </Link>
+        , in Boston, Massachusetts. On the Quantum Platform team I contribute to
         Orquestra Studio, a platform for building and deploying quantum-enhanced
         enterprise applications. My focus is on developing high-performance user
         interfaces to be used by scientists and DevOps professionals to develop
