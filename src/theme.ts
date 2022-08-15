@@ -35,6 +35,11 @@ const getTheme = (mode: PaletteMode) =>
         MuiIconButton: {
           defaultProps: {
             color: 'inherit',
+            sx: {
+              '&:hover': {
+                backgroundColor: 'rgba(255, 255, 255, 0.08)',
+              },
+            },
           },
         },
         MuiLink: {
