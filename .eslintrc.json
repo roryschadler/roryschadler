@@ -23,5 +23,8 @@
     "plugin:jsx-a11y/recommended"
   ],
   "plugins": ["prettier"],
-  "ignorePatterns": ["**/node_modules/**"]
+  "ignorePatterns": ["**/node_modules/**"],
+  "rules": {
+    "react/react-in-jsx-scope": "off"
+  }
 }

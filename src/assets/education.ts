@@ -1,4 +1,4 @@
-import { ItemAriaProps, ItemProps } from '../components/atomic/Item';
+import { ItemAriaProps, ItemProps } from 'components/atomic/Item';
 
 const ariaProps: ItemAriaProps = {
   title: 'School',
@@ -13,21 +13,35 @@ const education: ItemProps[] = [
     subItems: [
       {
         text: [
-          'Bachelor of Arts in Physics modified with Computer Science, cum Laude',
+          [
+            'Bachelor of Arts in Physics modified with Computer Science, cum',
+            'Laude',
+          ],
           'Minor in Chinese Language',
         ],
       },
       {
         title: 'Awards:',
         text: [
-          'Christina Porter Award in the Arts for Achievement in Vocal Music, Hopkins Center for the Arts',
-          'Stanley Wallace Technical Theater Award, Dartmouth College Department of Theater',
+          [
+            'Christina Porter Award in the Arts for Achievement in Vocal',
+            'Music, Hopkins Center for the Arts',
+          ],
+          [
+            'Stanley Wallace Technical Theater Award, Dartmouth College',
+            'Department of Theater',
+          ],
         ],
+        disabled: true,
       },
       {
         title: 'Relevant Coursework:',
         text: [
-          'Quantum Computation and Information, Quantum Mechanics, Physical Computing, Advanced Mechanics, Software Design and Implementation, Machine Learning',
+          [
+            'Quantum Computation and Information, Quantum Mechanics, Physical',
+            'Computing, Advanced Mechanics, Software Design and',
+            'Implementation, Machine Learning',
+          ],
         ],
       },
     ],

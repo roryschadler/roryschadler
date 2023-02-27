@@ -1,4 +1,3 @@
-import React from 'react';
 import { Box, Divider, Typography, styled, Grid, Stack } from '@mui/material';
 
 const LI = styled('li')({});
@@ -10,9 +9,10 @@ interface ItemInterface {
   endDate?: string;
   subItems: {
     title?: string;
-    text?: string[];
+    text?: (string | string[])[];
     startDate?: string;
     endDate?: string;
+    disabled?: boolean;
   }[];
   subtitle?: string;
   last?: boolean;
@@ -69,28 +69,37 @@ const Item = ({
             </Typography>
           </Grid>
         </Grid>
-        {subItems.map((subItem, subItemIndex) => (
-          <Box key={subItemIndex}>
-            <Typography variant="body1" aria-label={ariaSubItems}>
-              {subItem.title}
-            </Typography>
-            {subItem.startDate && (
-              <Typography variant="body2" aria-label="Dates">
-                {subItem.startDate} — {subItem.endDate ?? 'Present'}
+        {subItems
+          .filter((item) => !item.disabled)
+          .map((subItem, subItemIndex) => (
+            <Box key={subItemIndex}>
+              <Typography variant="body1" aria-label={ariaSubItems}>
+                {subItem.title}
               </Typography>
-            )}
-            {subItem.text && (
-              <UL
-                sx={{ marginTop: 0.5, ':last-of-type': { marginBottom: 1.5 } }}
-                aria-label="Detail"
-              >
-                {subItem.text.map((displayText, textIndex) => (
-                  <LI key={textIndex}>{displayText}</LI>
-                ))}
-              </UL>
-            )}
-          </Box>
-        ))}
+              {subItem.startDate && (
+                <Typography variant="body2" aria-label="Dates">
+                  {subItem.startDate} — {subItem.endDate ?? 'Present'}
+                </Typography>
+              )}
+              {subItem.text && (
+                <UL
+                  sx={{
+                    marginTop: 0.5,
+                    ':last-of-type': { marginBottom: 1.5 },
+                  }}
+                  aria-label="Detail"
+                >
+                  {subItem.text.map((displayText, textIndex) => (
+                    <LI key={textIndex}>
+                      {Array.isArray(displayText)
+                        ? displayText.join(' ')
+                        : displayText}
+                    </LI>
+                  ))}
+                </UL>
+              )}
+            </Box>
+          ))}
       </Stack>
       {last || <Divider sx={{ marginBottom: 1.5 }} />}
     </>

@@ -1,4 +1,4 @@
-import { ItemAriaProps, ItemProps } from '../components/atomic/Item';
+import { ItemAriaProps, ItemProps } from 'components/atomic/Item';
 
 const ariaProps: ItemAriaProps = {
   title: 'Company',
@@ -12,9 +12,16 @@ const experiences: ItemProps[] = [
     subtitle: 'Boston, MA',
     subItems: [
       {
-        title: 'Front-End Developer, Quantum Platform Engineering Team',
+        title:
+          'Software Engineer, Front-End, Quantum Platform Engineering Team',
         text: [
-          'Developing user interfaces which are used by scientists and DevOps professionals to develop quantum computing and machine learning solutions, and run those solutions in an enterprise environment',
+          [
+            'As part of the Quantum Platform team, I contribute to Orquestra',
+            'across the tech stack, writing and deploying high-performance',
+            'user interfaces for use by scientists and non-scientists alike.',
+            'Orquestra enables anyone to write and deliver quantum and machine',
+            'learning solutions, and run them in an enterprise environment.',
+          ],
         ],
       },
     ],
@@ -29,7 +36,13 @@ const experiences: ItemProps[] = [
         title:
           'Associate in Research, Duke University Pratt School of Engineering',
         text: [
-          'Continued work on the MaterialsMine application, helping transition the application to a containerized and production-ready environment. Projects included front-end web development in Vue.js and migrating static views to reactive components',
+          [
+            'Continued work on the MaterialsMine application, helping',
+            'transition the application to a containerized and',
+            'production-ready environment. Projects included front-end web',
+            'development in Vue.js and migrating static views to reactive',
+            'components',
+          ],
         ],
         startDate: 'December 2021',
         endDate: 'March 2022',
@@ -37,8 +50,15 @@ const experiences: ItemProps[] = [
       {
         title: 'Software Engineer, University of Vermont',
         text: [
-          'Helped in the development of an online database for data on nanocomposite materials, including work on semantic data ETL, manipulation and retrieval',
-          'Built several tools for the automatic conversion and retrieval of data provided by academic journals',
+          [
+            'Helped in the development of an online database for data on',
+            'nanocomposite materials, including work on semantic data ETL,',
+            'manipulation and retrieval',
+          ],
+          [
+            'Built several tools for the automatic conversion and retrieval of',
+            'data provided by academic journals',
+          ],
         ],
         startDate: 'January 2020',
         endDate: 'September 2020',
