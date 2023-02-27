@@ -1,4 +1,4 @@
-import React from 'react';
+import { cloneElement } from 'react';
 import {
   AppBar,
   Grid,
@@ -8,10 +8,10 @@ import {
   useScrollTrigger,
 } from '@mui/material';
 
-import Avatar from '../atomic/Avatar';
-import LinkedInButton from '../atomic/LinkedInButton';
-import GitHubButton from '../atomic/GitHubButton';
-import DarkModeButton from '../atomic/DarkModeButton';
+import Avatar from 'components/atomic/Avatar';
+import LinkedInButton from 'components/atomic/LinkedInButton';
+import GitHubButton from 'components/atomic/GitHubButton';
+import DarkModeButton from 'components/atomic/DarkModeButton';
 
 type Props = {
   children: React.ReactElement;
@@ -24,12 +24,12 @@ const ElevationScroll = ({ children }: Props) => {
     target: window,
   });
 
-  return React.cloneElement(children, {
+  return cloneElement(children, {
     elevation: trigger ? 4 : 0,
   });
 };
 
-const HeaderBar = (): React.ReactElement => {
+const HeaderBar = () => {
   return (
     <ElevationScroll>
       <AppBar position="sticky" enableColorOnDark aria-label="Header Bar">

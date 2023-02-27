@@ -1,10 +1,9 @@
-import React from 'react';
 import { Container } from '@mui/material';
 import About from './About';
 import Education from './Education';
 import Experience from './Experience';
 
-function Main(): React.ReactElement {
+const Main = () => {
   return (
     <Container maxWidth="sm" component={'main'} aria-label="CV">
       <About />
@@ -12,6 +11,6 @@ function Main(): React.ReactElement {
       <Education />
     </Container>
   );
-}
+};
 
 export default Main;

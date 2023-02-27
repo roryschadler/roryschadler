@@ -1,9 +1,7 @@
-import React from 'react';
-
 import { Typography } from '@mui/material';
 
-import Item from '../atomic/Item';
-import experiences from '../../assets/experience';
+import Item from 'components/atomic/Item';
+import experiences from 'assets/experience';
 
 const Experience = () => {
   return (

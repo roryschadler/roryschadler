@@ -1,8 +1,7 @@
-import React from 'react';
 import { Typography } from '@mui/material';
 
-import educations from '../../assets/education';
-import Item from '../atomic/Item';
+import educations from 'assets/education';
+import Item from 'components/atomic/Item';
 
 const Education = () => {
   return (

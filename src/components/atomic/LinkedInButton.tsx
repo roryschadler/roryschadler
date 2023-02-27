@@ -1,4 +1,3 @@
-import React from 'react';
 import { LinkedIn } from '@mui/icons-material';
 import {
   IconButton,
