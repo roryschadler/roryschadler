@@ -10,7 +10,7 @@ const Experience = () => {
         Experience
       </Typography>
       {experiences.map((exp, index) => (
-        <Item {...exp} key={index} last={index >= experiences.length - 1} />
+        <Item {...exp} key={exp.key} last={index >= experiences.length - 1} />
       ))}
     </section>
   );

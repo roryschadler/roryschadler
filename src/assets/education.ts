@@ -10,8 +10,10 @@ const education: ItemProps[] = [
   {
     title: 'Dartmouth College',
     subtitle: 'Hanover, NH',
+    key: 'dartmouth',
     subItems: [
       {
+        key: 'degree',
         text: [
           [
             'Bachelor of Arts in Physics modified with Computer Science, cum',
@@ -22,6 +24,7 @@ const education: ItemProps[] = [
       },
       {
         title: 'Awards:',
+        key: 'awards',
         text: [
           [
             'Christina Porter Award in the Arts for Achievement in Vocal',
@@ -36,6 +39,7 @@ const education: ItemProps[] = [
       },
       {
         title: 'Relevant Coursework:',
+        key: 'coursework',
         text: [
           [
             'Quantum Computation and Information, Quantum Mechanics, Physical',
@@ -52,8 +56,10 @@ const education: ItemProps[] = [
   {
     title: 'Beijing Normal University',
     subtitle: 'Beijing, China',
+    key: 'beijing_normal_university',
     subItems: [
       {
+        key: 'degree',
         text: ['Chinese Language Study Abroad, Dartmouth College'],
       },
     ],

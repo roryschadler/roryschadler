@@ -10,10 +10,12 @@ const experiences: ItemProps[] = [
   {
     title: 'Zapata Computing',
     subtitle: 'Boston, MA',
+    key: 'zapata',
     subItems: [
       {
         title:
           'Software Engineer, Front-End, Quantum Platform Engineering Team',
+        key: 'platform_engineer',
         text: [
           [
             'As part of the Quantum Platform team, I contribute to Orquestra',
@@ -31,10 +33,12 @@ const experiences: ItemProps[] = [
   {
     title: 'MaterialsMine',
     subtitle: 'Remote',
+    key: 'materialsmine',
     subItems: [
       {
         title:
           'Associate in Research, Duke University Pratt School of Engineering',
+        key: 'duke_ra',
         text: [
           [
             'Continued work on the MaterialsMine application, helping',
@@ -49,6 +53,7 @@ const experiences: ItemProps[] = [
       },
       {
         title: 'Software Engineer, University of Vermont',
+        key: 'uvm_engineer',
         text: [
           [
             'Helped in the development of an online database for data on',

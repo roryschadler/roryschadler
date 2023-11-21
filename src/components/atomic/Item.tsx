@@ -1,14 +1,16 @@
-import { Box, Divider, Typography, styled, Grid, Stack } from '@mui/material';
+import { Divider, Typography, styled, Stack } from '@mui/material';
 
 const LI = styled('li')({});
 const UL = styled('ul')({});
 
 interface ItemInterface {
   title: string;
+  key: string;
   startDate: string;
   endDate?: string;
   subItems: {
     title?: string;
+    key: string;
     text?: (string | string[])[];
     startDate?: string;
     endDate?: string;
@@ -43,36 +45,23 @@ const Item = ({
   return (
     <>
       <Stack aria-label={title}>
-        <Grid container justifyContent="space-between">
-          <Grid item>
-            <Typography
-              fontWeight="bold"
-              variant="body1"
-              display="inline"
-              aria-label={ariaTitle}
-            >
-              {title}
-            </Typography>
-            {subtitle && (
-              <Typography
-                variant="body1"
-                display="inline"
-                aria-label={ariaSubtitle}
-              >
-                , {subtitle}
-              </Typography>
-            )}
-          </Grid>
-          <Grid item>
-            <Typography fontWeight="bold" variant="body1" aria-label="Dates">
-              {startDate} — {endDate ?? 'Present'}
-            </Typography>
-          </Grid>
-        </Grid>
+        <Stack direction="row" justifyContent="space-between">
+          <Typography
+            variant="body1"
+            display="inline"
+            aria-label={[ariaTitle, ariaSubtitle].join(', ')}
+          >
+            <b>{title}</b>
+            {subtitle && `, ${subtitle}`}
+          </Typography>
+          <Typography fontWeight="bold" variant="body1" aria-label="Dates">
+            {startDate} — {endDate ?? 'Present'}
+          </Typography>
+        </Stack>
         {subItems
           .filter((item) => !item.disabled)
-          .map((subItem, subItemIndex) => (
-            <Box key={subItemIndex}>
+          .map((subItem) => (
+            <Stack key={subItem.key}>
               <Typography variant="body1" aria-label={ariaSubItems}>
                 {subItem.title}
               </Typography>
@@ -98,10 +87,10 @@ const Item = ({
                   ))}
                 </UL>
               )}
-            </Box>
+            </Stack>
           ))}
       </Stack>
-      {last || <Divider sx={{ marginBottom: 1.5 }} />}
+      {last || <Divider sx={{ marginBottom: 1.5 }} data-testid="divider" />}
     </>
   );
 };

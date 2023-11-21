@@ -10,7 +10,7 @@ const Education = () => {
         Education
       </Typography>
       {educations.map((edu, index) => (
-        <Item {...edu} key={index} last={index >= educations.length - 1} />
+        <Item {...edu} key={edu.key} last={index >= educations.length - 1} />
       ))}
     </section>
   );
