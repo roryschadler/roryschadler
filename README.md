@@ -1,3 +1,8 @@
+<!--
+  This README is used on @roryschadler's GitHub profile. For
+  more information about this repository, see INFO.md.
+-->
+
 # Rory Schadler
 
 ## About Me
