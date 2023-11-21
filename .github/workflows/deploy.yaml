@@ -37,9 +37,9 @@ jobs:
           git config --global user.email "48921090+roryschadler@users.noreply.github.com"
           git config --global user.name "roryschadler"
           yarn gh-pages \
-            --message "${{ steps.tag }}" \
+            --message "${{ steps.tag.outputs.tag }}" \
             --dist dist \
             --repo https://git:${GITHUB_TOKEN}@github.com/roryschadler/roryschadler.github.io.git \
             --user "roryschadler <48921090+roryschadler@users.noreply.github.com>"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAGES_ACCESS_TOKEN }}
