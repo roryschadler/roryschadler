@@ -26,7 +26,7 @@ jobs:
         run: yarn install --immutable
 
       - name: Get tag
-        id: vars
+        id: tag
         run: echo "tag=${GITHUB_REF#refs/*/}" >> $GITHUB_OUTPUT
 
       - name: Build
@@ -34,10 +34,12 @@ jobs:
 
       - name: Deploy with gh-pages
         run: |
+          git config --global user.email "48921090+roryschadler@users.noreply.github.com"
+          git config --global user.name "roryschadler"
           yarn gh-pages \
-            --message "${{ github.event.ref }}" \
+            --message "${{ steps.tag }}" \
             --dist dist \
-            --repo https://github.com/roryschadler/roryschadler.github.io.git \
-            --user "github-actions-bot <support+actions@github.com>"
+            --repo https://git:${GITHUB_TOKEN}@github.com/roryschadler/roryschadler.github.io.git \
+            --user "roryschadler <48921090+roryschadler@users.noreply.github.com>"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
