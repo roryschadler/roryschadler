@@ -62,7 +62,8 @@
     {
       "files": ["**/*.spec.{ts,tsx}"],
       "plugins": ["vitest"],
-      "extends": ["plugin:vitest/recommended"]
+      "extends": ["plugin:vitest/recommended"],
+      "excludedFiles": ["cypress/**"]
     }
   ]
 }
