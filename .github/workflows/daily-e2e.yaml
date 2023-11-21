@@ -1,0 +1,32 @@
+name: Daily E2E Tests
+on:
+  schedule:
+    # every day at 3pm UTC (10 or 11am EST)
+    - cron: '0 15 * * *'
+jobs:
+  # this matches the cypress tests, but only runs one test, as an easy way to
+  # make sure the site is still available
+  e2e:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Enable corepack
+        run: corepack enable
+      # Yarn dependencies cannot be cached until yarn is installed
+      # WORKAROUND: https://github.com/actions/setup-node/issues/531
+      - name: Extract cached dependencies
+        uses: actions/setup-node@v4
+        with:
+          cache: 'yarn'
+
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+        with:
+          install-command: yarn install --immutable
+          spec: cypress/tests/page-is-up.spec.ts
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CYPRESS_BASE_URL: https://roryschadler.me
