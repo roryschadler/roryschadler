@@ -1,5 +1,6 @@
 import { useMediaQuery, PaletteMode } from '@mui/material';
 import { useEffect, useMemo, useState } from 'react';
+
 import getTheme from 'theme';
 
 export const useDarkTheme = () => {

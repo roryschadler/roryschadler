@@ -1,6 +1,7 @@
-import { useContext } from 'react';
 import { DarkMode, LightMode } from '@mui/icons-material';
 import { IconButton, Tooltip, useMediaQuery, useTheme } from '@mui/material';
+import { useContext } from 'react';
+
 import { ToggleColorModeContext } from 'App';
 
 const DarkModeButton = () => {

@@ -1,4 +1,3 @@
-import { cloneElement } from 'react';
 import {
   AppBar,
   Grid,
@@ -7,11 +6,12 @@ import {
   Typography,
   useScrollTrigger,
 } from '@mui/material';
+import { cloneElement } from 'react';
 
 import Avatar from 'components/atomic/Avatar';
-import LinkedInButton from 'components/atomic/LinkedInButton';
-import GitHubButton from 'components/atomic/GitHubButton';
 import DarkModeButton from 'components/atomic/DarkModeButton';
+import GitHubButton from 'components/atomic/GitHubButton';
+import LinkedInButton from 'components/atomic/LinkedInButton';
 
 type Props = {
   children: React.ReactElement;

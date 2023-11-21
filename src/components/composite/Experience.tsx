@@ -1,7 +1,7 @@
 import { Typography } from '@mui/material';
 
-import Item from 'components/atomic/Item';
 import experiences from 'assets/experience';
+import Item from 'components/atomic/Item';
 
 const Experience = () => {
   return (
