@@ -12,6 +12,7 @@ export default defineConfig(() => ({
   define: {
     __APP_VERSION__: JSON.stringify(process.env.npm_package_version),
   },
+  assetsInclude: ['src/assets/**/*.md'],
   test: {
     globals: true,
     environment: 'happy-dom',
