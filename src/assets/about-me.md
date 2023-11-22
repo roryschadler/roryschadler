@@ -8,7 +8,12 @@ experience building and deploying applications to help people do just
 that, building web apps using React and Vue, building backend services
 written in TypeScript, Python, and Go, and deploying them all on Kubernetes clusters.
 
-I'm currently working as a Platform Engineer for [Zapata AI](https://zapata.ai), in Boston, Massachusetts.
+I'm currently working as a Platform Engineer for [Zapata AI](https://zapata.ai),
+in Boston, Massachusetts. I work on both client- and internal-facing projects,
+including dashboards and MLOps pipelines for the [Andretti Autosport | Zapata AI
+Race Analytics Command Center](https://zapata.ai/case-study-andretti/),
+as well as [Orquestra Portal and Studio](https://orquestra.io), Zapata's
+platform for building Industrial Generative AI applications.
 
 I am a proud Dartmouth graduate, with a degree in Physics modified with
 Computer Science and a minor in Chinese language. I'm enthusiastic
