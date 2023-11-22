@@ -9,6 +9,9 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 export default defineConfig(() => ({
   plugins: [react(), tsconfigPaths()],
   clearScreen: false,
+  define: {
+    __APP_VERSION__: JSON.stringify(process.env.npm_package_version),
+  },
   test: {
     globals: true,
     environment: 'happy-dom',

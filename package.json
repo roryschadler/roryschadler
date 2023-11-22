@@ -1,6 +1,6 @@
 {
   "name": "roryschadler",
-  "version": "0.1.4",
+  "version": "0.1.4-rc1",
   "homepage": "https://roryschadler.github.io",
   "private": true,
   "type": "module",
@@ -50,7 +50,7 @@
     "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-vitest": "^0.3.10",
-    "gh-pages": "^5.0.0",
+    "gh-pages": "^6.1.0",
     "happy-dom": "^12.10.3",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.2",
