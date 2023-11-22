@@ -40,7 +40,6 @@ jobs:
             --message "${{ steps.tag.outputs.tag }}" \
             --dist dist \
             --repo https://git:${GITHUB_TOKEN}@github.com/roryschadler/roryschadler.github.io.git \
-            --user "roryschadler <48921090+roryschadler@users.noreply.github.com>" \
-            --cname roryschadler.me
+            --user "roryschadler <48921090+roryschadler@users.noreply.github.com>"
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAGES_ACCESS_TOKEN }}
