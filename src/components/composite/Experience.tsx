@@ -1,17 +1,39 @@
 import { Typography } from '@mui/material';
 
-import experiences from 'assets/experience';
-import Item from 'components/atomic/Item';
+import materialsmineLocalSource from 'assets/career/materialsmine.md';
+import zapataLocalSource from 'assets/career/zapata.md';
+import Markdown from 'components/atomic/Markdown';
+import useFetchMarkdown from 'hooks/useFetchMarkdown';
+
+const materialsmineGitHubSource =
+  'https://raw.githubusercontent.com/roryschadler/roryschadler/main/src/assets/career/materialsmine.md';
+const zapataGitHubSource =
+  'https://raw.githubusercontent.com/roryschadler/roryschadler/main/src/assets/career/zapata.md';
 
 const Experience = () => {
+  const { data: zapata } = useFetchMarkdown(
+    ['career', 'zapata'],
+    zapataLocalSource,
+    zapataGitHubSource
+  );
+  const { data: materialsmine } = useFetchMarkdown(
+    ['career', 'materialsmine'],
+    materialsmineLocalSource,
+    materialsmineGitHubSource
+  );
   return (
     <section aria-labelledby="expHeader">
-      <Typography variant="h6" component="h2" id="expHeader">
+      <Typography
+        variant="h4"
+        fontWeight="bold"
+        component="h2"
+        marginBottom="0.8rem"
+        id="expHeader"
+      >
         Experience
       </Typography>
-      {experiences.map((exp, index) => (
-        <Item {...exp} key={exp.key} last={index >= experiences.length - 1} />
-      ))}
+      <Markdown>{zapata}</Markdown>
+      <Markdown>{materialsmine}</Markdown>
     </section>
   );
 };

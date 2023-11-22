@@ -1,17 +1,30 @@
 import { Typography } from '@mui/material';
 
-import educations from 'assets/education';
-import Item from 'components/atomic/Item';
+import dartmouthLocalSource from 'assets/education/dartmouth.md';
+import Markdown from 'components/atomic/Markdown';
+import useFetchMarkdown from 'hooks/useFetchMarkdown';
+
+const dartmouthGitHubSource =
+  'https://raw.githubusercontent.com/roryschadler/roryschadler/main/src/assets/education/dartmouth.md';
 
 const Education = () => {
+  const { data: dartmouth } = useFetchMarkdown(
+    ['education', 'dartmouth'],
+    dartmouthLocalSource,
+    dartmouthGitHubSource
+  );
   return (
     <section aria-labelledby="eduHeader">
-      <Typography variant="h6" component="h2" id="eduHeader">
+      <Typography
+        variant="h4"
+        fontWeight="bold"
+        component="h2"
+        marginBottom="0.8rem"
+        id="eduHeader"
+      >
         Education
       </Typography>
-      {educations.map((edu, index) => (
-        <Item {...edu} key={edu.key} last={index >= educations.length - 1} />
-      ))}
+      <Markdown>{dartmouth}</Markdown>
     </section>
   );
 };

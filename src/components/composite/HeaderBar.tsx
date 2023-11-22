@@ -32,7 +32,12 @@ const ElevationScroll = ({ children }: Props) => {
 const HeaderBar = () => {
   return (
     <ElevationScroll>
-      <AppBar position="sticky" enableColorOnDark aria-label="Header Bar">
+      <AppBar
+        position="sticky"
+        enableColorOnDark
+        aria-label="Header Bar"
+        sx={{ marginBottom: 2 }}
+      >
         <Toolbar>
           <Grid
             container
@@ -42,7 +47,7 @@ const HeaderBar = () => {
             alignItems="center"
           >
             <Grid item xs={6}>
-              <Typography component="h1" variant="h4" fontWeight="500">
+              <Typography component="h1" variant="h4" fontWeight="bolder">
                 Rory Schadler
               </Typography>
             </Grid>
