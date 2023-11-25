@@ -4,8 +4,6 @@ on:
     # every day at 3pm UTC (10 or 11am EST)
     - cron: '0 15 * * *'
 jobs:
-  # this matches the cypress tests, but only runs one test, as an easy way to
-  # make sure the site is still available
   e2e:
     runs-on: ubuntu-latest
     steps:
@@ -26,7 +24,8 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           install-command: yarn install --immutable
-          spec: cypress/tests/page-is-up.spec.ts
+          record: true
         env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CYPRESS_BASE_URL: https://roryschadler.me
