@@ -45,7 +45,9 @@ export const defaultComponentsMap: Components = {
 };
 
 const Markdown: typeof ReactMarkdown = (props) => {
-  return <ReactMarkdown components={defaultComponentsMap} {...props} />;
+  return (
+    <ReactMarkdown skipHtml components={defaultComponentsMap} {...props} />
+  );
 };
 
 export default Markdown;

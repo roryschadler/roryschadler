@@ -1,8 +1,9 @@
-import { Typography } from '@mui/material';
+import { Skeleton } from '@mui/material';
 
 import materialsmineLocalSource from 'assets/career/materialsmine.md';
 import zapataLocalSource from 'assets/career/zapata.md';
-import Markdown from 'components/atomic/Markdown';
+import SectionHeader from 'components/libraries/mui/SectionHeader';
+import Markdown from 'components/libraries/react-markdown/Markdown';
 import useFetchMarkdown from 'hooks/useFetchMarkdown';
 
 const materialsmineGitHubSource =
@@ -11,28 +12,23 @@ const zapataGitHubSource =
   'https://raw.githubusercontent.com/roryschadler/roryschadler/main/src/assets/career/zapata.md';
 
 const Experience = () => {
-  const { data: zapata } = useFetchMarkdown(
+  const { data: zapata, isLoading: isZapataLoading } = useFetchMarkdown(
     ['career', 'zapata'],
     zapataLocalSource,
     zapataGitHubSource
   );
-  const { data: materialsmine } = useFetchMarkdown(
-    ['career', 'materialsmine'],
-    materialsmineLocalSource,
-    materialsmineGitHubSource
-  );
+  const { data: materialsmine, isLoading: isMaterialsMineLoading } =
+    useFetchMarkdown(
+      ['career', 'materialsmine'],
+      materialsmineLocalSource,
+      materialsmineGitHubSource
+    );
   return (
     <section aria-labelledby="expHeader">
-      <Typography
-        variant="h4"
-        fontWeight="bold"
-        component="h2"
-        marginBottom="0.8rem"
-        id="expHeader"
-      >
-        Experience
-      </Typography>
+      <SectionHeader id="expHeader">Experience</SectionHeader>
+      {isZapataLoading && <Skeleton width="100%" height="10em" />}
       <Markdown>{zapata}</Markdown>
+      {isMaterialsMineLoading && <Skeleton width="100%" height="10em" />}
       <Markdown>{materialsmine}</Markdown>
     </section>
   );
