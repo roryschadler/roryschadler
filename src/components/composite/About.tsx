@@ -1,18 +1,14 @@
 import { Skeleton } from '@mui/material';
 
-import aboutLocalSource from 'assets/about-me.md';
+import aboutSource from 'assets/about-me.md';
 import SectionHeader from 'components/libraries/mui/SectionHeader';
 import Markdown from 'components/libraries/react-markdown/Markdown';
 import useFetchMarkdown from 'hooks/useFetchMarkdown';
 
-const aboutGitHubSource =
-  'https://raw.githubusercontent.com/roryschadler/roryschadler/main/src/assets/about-me.md';
-
 const About = () => {
   const { data: aboutMe, isLoading: isAboutMeLoading } = useFetchMarkdown(
     ['about'],
-    aboutLocalSource,
-    aboutGitHubSource
+    aboutSource
   );
 
   return (

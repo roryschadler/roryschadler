@@ -1,28 +1,19 @@
 import { Skeleton } from '@mui/material';
 
-import materialsmineLocalSource from 'assets/career/materialsmine.md';
-import zapataLocalSource from 'assets/career/zapata.md';
+import materialsmineSource from 'assets/career/materialsmine.md';
+import zapataSource from 'assets/career/zapata.md';
 import SectionHeader from 'components/libraries/mui/SectionHeader';
 import Markdown from 'components/libraries/react-markdown/Markdown';
 import useFetchMarkdown from 'hooks/useFetchMarkdown';
 
-const materialsmineGitHubSource =
-  'https://raw.githubusercontent.com/roryschadler/roryschadler/main/src/assets/career/materialsmine.md';
-const zapataGitHubSource =
-  'https://raw.githubusercontent.com/roryschadler/roryschadler/main/src/assets/career/zapata.md';
-
 const Experience = () => {
   const { data: zapata, isLoading: isZapataLoading } = useFetchMarkdown(
     ['career', 'zapata'],
-    zapataLocalSource,
-    zapataGitHubSource
+    zapataSource
   );
   const { data: materialsmine, isLoading: isMaterialsMineLoading } =
-    useFetchMarkdown(
-      ['career', 'materialsmine'],
-      materialsmineLocalSource,
-      materialsmineGitHubSource
-    );
+    useFetchMarkdown(['career', 'materialsmine'], materialsmineSource);
+
   return (
     <section aria-labelledby="expHeader">
       <SectionHeader id="expHeader">Experience</SectionHeader>
