@@ -40,10 +40,10 @@
     "@types/react-dom": "^18.0.10",
     "@typescript-eslint/eslint-plugin": "^5.53.0",
     "@typescript-eslint/parser": "^5.53.0",
-    "@vitejs/plugin-react-swc": "^3.5.0",
+    "@vitejs/plugin-react-swc": "^3.7.0",
     "concurrently": "^8.2.2",
     "cypress": "^13.5.1",
-    "cypress-vite": "^1.4.2",
+    "cypress-vite": "^1.5.0",
     "eslint": "^8.35.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-import-resolver-typescript": "^3.6.1",
@@ -58,9 +58,9 @@
     "lint-staged": "^13.1.2",
     "prettier": "^3.1.0",
     "typescript": "^4.9.3",
-    "vite": "^5.2.9",
-    "vite-tsconfig-paths": "^4.0.5",
-    "vitest": "^0.34.6"
+    "vite": "^5.3.1",
+    "vite-tsconfig-paths": "^4.3.2",
+    "vitest": "^1.6.0"
   },
   "lint-staged": {
     "*.{js,ts,tsx}": [
