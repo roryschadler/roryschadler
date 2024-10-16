@@ -7,11 +7,14 @@ build:
   yarn vite build
 
 version_bump MESSAGE VERSION_BUMP:
+  #!/usr/bin/env bash
+  set -euxo pipefail
   yarn version {{VERSION_BUMP}}
+  version=$(jq -r '.version' package.json)
   git add .
-  git commit -m "v{{VERSION_BUMP}}: {{MESSAGE}}"
+  git commit -m "v${version}: {{MESSAGE}}"
   git push
-  git tag v{{VERSION_BUMP}}
+  git tag v${version}
   git push --tags
 
 # Deploy the site with the provided message using the gh-pages CLI
