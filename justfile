@@ -3,16 +3,19 @@ default:
 
 # Build the site
 build:
-  tsc
-  vite build
+  yarn tsc
+  yarn vite build
 
 # Deploy the site with the provided message using the gh-pages CLI
 deploy MESSAGE: build
-  gh-pages --message '{{MESSAGE}}' --dist dist --repo "https://github.com/roryschadler/roryschadler.github.io.git"
+  yarn gh-pages --message '{{MESSAGE}}' --dist dist --repo "https://github.com/roryschadler/roryschadler.github.io.git"
 
 lint:
-  eslint ./src
-  tsc --noEmit
+  yarn eslint ./src
+  yarn tsc --noEmit
 
 fix:
-  eslint --fix ./src
+  yarn eslint --fix ./src
+
+preview: build
+  yarn vite preview
