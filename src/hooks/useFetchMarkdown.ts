@@ -11,7 +11,12 @@ const useFetchMarkdown = (
     key,
     () =>
       fetch(import.meta.env.DEV ? localPath : makeGitHubSource(localPath))
-        .then((res) => res.text())
+        .then((res) => {
+          if (!res.ok) {
+            throw new Error('Failed to fetch markdown');
+          }
+          return res.text();
+        })
         .catch(async () => {
           // if the fetch fails, try to get the markdown from the local copy
           return fetch(localPath).then((res) => res.text());
