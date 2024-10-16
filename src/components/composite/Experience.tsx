@@ -1,8 +1,8 @@
 import { Skeleton } from '@mui/material';
 
-import fl97Source from 'assets/career/fl97.md';
-import materialsmineSource from 'assets/career/materialsmine.md';
-import zapataSource from 'assets/career/zapata.md';
+import fl97Source from 'assets/fl97.md';
+import materialsmineSource from 'assets/materialsmine.md';
+import zapataSource from 'assets/zapata.md';
 import SectionHeader from 'components/libraries/mui/SectionHeader';
 import Markdown from 'components/libraries/react-markdown/Markdown';
 import useFetchMarkdown from 'hooks/useFetchMarkdown';

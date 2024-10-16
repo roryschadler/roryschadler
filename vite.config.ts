@@ -12,7 +12,21 @@ export default defineConfig(() => ({
   define: {
     __APP_VERSION__: JSON.stringify(process.env.npm_package_version),
   },
-  assetsInclude: ['src/assets/**/*.md'],
+  assetsInclude: ['src/assets/*.md'],
+  build: {
+    assetsInlineLimit: (filePath: string) => {
+      if (filePath.endsWith('.md')) {
+        return false;
+      }
+      return true;
+    },
+    emptyOutDir: true,
+    rollupOptions: {
+      output: {
+        assetFileNames: 'assets/[name].[ext]',
+      },
+    },
+  },
   test: {
     globals: true,
     environment: 'happy-dom',

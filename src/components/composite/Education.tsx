@@ -1,6 +1,6 @@
 import { Skeleton } from '@mui/material';
 
-import dartmouthSource from 'assets/education/dartmouth.md';
+import dartmouthSource from 'assets/dartmouth.md';
 import SectionHeader from 'components/libraries/mui/SectionHeader';
 import Markdown from 'components/libraries/react-markdown/Markdown';
 import useFetchMarkdown from 'hooks/useFetchMarkdown';
