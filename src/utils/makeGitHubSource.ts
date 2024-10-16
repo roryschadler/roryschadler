@@ -1,5 +1,5 @@
 const makeGitHubSource = (filePath: string) => {
-  return `https://raw.githubusercontent.com/roryschadler/roryschadler/main${filePath}`;
+  return `https://raw.githubusercontent.com/roryschadler/roryschadler/main/src${filePath}`;
 };
 
 export default makeGitHubSource;
