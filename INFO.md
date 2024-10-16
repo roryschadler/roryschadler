@@ -10,6 +10,9 @@ application, bundled with Vite, and deployed to GitHub Pages via
 To run locally, first install dependencies:
 
 ```shell
+# Install nvm and Node.js
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+nvm install 20
 # if you've never installed yarn before
 corepack enable
 
