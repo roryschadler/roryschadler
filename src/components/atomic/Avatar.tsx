@@ -2,7 +2,7 @@ import { Avatar as MuiAvatar, IconButton, Link } from '@mui/material';
 
 const Avatar = () => (
   <Link target="_blank" href="https://www.linkedin.com/in/roryschadler/">
-    <IconButton>
+    <IconButton aria-label="Contact Me">
       <MuiAvatar
         alt="Rory Schadler"
         // pre-hashed email
