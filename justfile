@@ -16,6 +16,7 @@ version_bump MESSAGE VERSION_BUMP:
   git push
   git tag v${version}
   git push --tags
+  gh release create v${version} --generate-notes
 
 # Deploy the site with the provided message using the gh-pages CLI
 deploy MESSAGE VERSION_BUMP="minor": (version_bump MESSAGE VERSION_BUMP) build
