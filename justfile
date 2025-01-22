@@ -29,5 +29,13 @@ lint:
 fix:
   yarn eslint --fix ./src
 
+unit-test:
+  yarn vitest
+
+e2e-test:
+  yarn cypress run
+
+test: unit-test e2e-test
+
 preview: build
   yarn vite preview
