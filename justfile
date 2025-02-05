@@ -39,3 +39,6 @@ test: unit-test e2e-test
 
 preview: build
   yarn vite preview
+
+dev:
+  yarn vite
