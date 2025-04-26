@@ -12,29 +12,28 @@ computational tools to tackle interesting problems. I'm especially interested in
 using AI, quantum computers, and classical computing techniques _together_ to
 improve the drug discovery process.
 
-I'm currently working as a software engineer II for Flagship Labs 97, an
-early-stage startup in Boston, Massachusetts. FL97 is aiming to automate the
-scientific process, allowing materials scientists and biochemists to design,
-build, and analyze new materials and molecules faster than ever before. I'm
-building the platform that will enable this automation, and I'm excited to be a
-part of this effort.
+I'm currently working at [Lila Sciences](https://www.lila.ai/), a Flagship
+Pioneering startup in Boston, Massachusetts. Lila's mission is to build
+scientific superintelligence, to solve humankind's greatest challenges. We're
+building a laboratory which will allow AI to explore the boundaries of
+knowledge, and expand our understanding of the world. I'm excited to be a part
+of this effort, building the platform that will enable this automation of the
+scientific method.
 
-I've found scientists often get slowed down by the applications they use. My
-experience has taught me that the best tools get out of the way, allowing
-scientists to focus on their work, while supporting communication and
-collaboration among them. I have experience building and deploying applications
-that scientists can actually use, as well as experience working with those
-scientists to improve existing workflows and tools. I've built web apps using
-React and Vue, backend services in Python, Node, and Go, and I've deployed them
-on Kubernetes clusters on AWS, Azure, and on-premise infrastructure.
+I've found scientists often get slowed down by the applications they use. As
+deeply technical users, I've found the best tools are those that get out of the
+way, allowing scientists to focus on their work, while supporting communication
+and collaboration among them. I have experience building and deploying
+applications that scientists can actually use, as well as experience working
+with those scientists to improve existing workflows and tools. In the pursuit of
+usable software for scientists, I've built web apps and orchestration platforms,
+deployed on cloud-native and on-premise infrastructure, all while sitting in the
+lab side-by-side with my users.
 
-Most of all, I’m enthusiastic about solving problems, using my analytic and
-computational skills to approach a problem from many angles. I'm a Dartmouth
-College graduate, and my coursework in quantum mechanics and quantum computing
-provided the problems to solve, while courses on software design and
-implementation, physical computing, and machine learning provided the tools to
-tackle them. I thrive most when given a hard problem and the freedom to solve
-it.
+At the end of the day, I’m enthusiastic about solving problems, using my
+analytic and computational skills to approach problems from many angles. I
+thrive most when given a hard problem and the chance to understand it, design a
+solution, and tackle it.
 
 [LinkedIn](https://www.linkedin.com/in/roryschadler/)
 

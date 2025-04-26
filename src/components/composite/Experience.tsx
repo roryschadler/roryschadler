@@ -1,6 +1,6 @@
 import { Skeleton } from '@mui/material';
 
-import fl97Source from 'assets/fl97.md';
+import lilaSource from 'assets/lila.md';
 import materialsmineSource from 'assets/materialsmine.md';
 import zapataSource from 'assets/zapata.md';
 import SectionHeader from 'components/libraries/mui/SectionHeader';
@@ -8,9 +8,9 @@ import Markdown from 'components/libraries/react-markdown/Markdown';
 import useFetchMarkdown from 'hooks/useFetchMarkdown';
 
 const Experience = () => {
-  const { data: fl97, isLoading: isFL97Loading } = useFetchMarkdown(
-    ['career', 'fl97'],
-    fl97Source
+  const { data: lila, isLoading: isLilaLoading } = useFetchMarkdown(
+    ['career', 'lila'],
+    lilaSource
   );
   const { data: zapata, isLoading: isZapataLoading } = useFetchMarkdown(
     ['career', 'zapata'],
@@ -22,8 +22,8 @@ const Experience = () => {
   return (
     <section aria-labelledby="expHeader">
       <SectionHeader id="expHeader">Experience</SectionHeader>
-      {isFL97Loading && <Skeleton width="100%" height="10em" />}
-      <Markdown>{fl97}</Markdown>
+      {isLilaLoading && <Skeleton width="100%" height="10em" />}
+      <Markdown>{lila}</Markdown>
       {isZapataLoading && <Skeleton width="100%" height="10em" />}
       <Markdown>{zapata}</Markdown>
       {isMaterialsMineLoading && <Skeleton width="100%" height="10em" />}
