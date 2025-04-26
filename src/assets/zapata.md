@@ -2,10 +2,10 @@
 
 ## March 2022 - June 2024
 
-At [Zapata AI](https://zapata.ai), I contributed in several capacities across
-the tech stack and the organization, writing Platform microservices in Go,
-client-facing web applications in TypeScript, and data processing pipelines in
-Python. My projects included:
+At Zapata AI, I contributed in several capacities across the tech stack and the
+organization, writing Platform microservices in Go, client-facing web
+applications in TypeScript, and data processing pipelines in Python. My projects
+included:
 
 The Andretti Autosport/Zapata AI Race Analytics Command Center, an extension of
 the Orquestra Platform on Andretti's trackside analytics truck.
