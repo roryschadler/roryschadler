@@ -1492,6 +1492,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node@npm:^20.0.0":
+  version: 20.19.20
+  resolution: "@types/node@npm:20.19.20"
+  dependencies:
+    undici-types: "npm:~6.21.0"
+  checksum: 10/59760e2565a8e1eaadfa6b1d127ac5cc3b850310eb83c409d348ab8d9428a0b488db73ae933b140c5c9ca88f36f9cf6e0c9d53cad07c372bad989a4a5d5b2d08
+  languageName: node
+  linkType: hard
+
 "@types/parse-json@npm:^4.0.0":
   version: 4.0.2
   resolution: "@types/parse-json@npm:4.0.2"
@@ -1566,6 +1575,13 @@ __metadata:
   version: 2.0.11
   resolution: "@types/unist@npm:2.0.11"
   checksum: 10/6d436e832bc35c6dde9f056ac515ebf2b3384a1d7f63679d12358766f9b313368077402e9c1126a14d827f10370a5485e628bf61aa91117cf4fc882423191a4e
+  languageName: node
+  linkType: hard
+
+"@types/whatwg-mimetype@npm:^3.0.2":
+  version: 3.0.2
+  resolution: "@types/whatwg-mimetype@npm:3.0.2"
+  checksum: 10/609607beeaa8b50b9e00541d8f571880d651b26b6b006103370099aba00784037de54433627c9fe775a5558e3d1fc09c2a48f54c8af91988e9bebeaf6a698eeb
   languageName: node
   linkType: hard
 
@@ -4519,13 +4535,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"happy-dom@npm:^16.8.1":
-  version: 16.8.1
-  resolution: "happy-dom@npm:16.8.1"
+"happy-dom@npm:^20.0.0":
+  version: 20.0.0
+  resolution: "happy-dom@npm:20.0.0"
   dependencies:
-    webidl-conversions: "npm:^7.0.0"
+    "@types/node": "npm:^20.0.0"
+    "@types/whatwg-mimetype": "npm:^3.0.2"
     whatwg-mimetype: "npm:^3.0.0"
-  checksum: 10/3a019c2806a508e829d3d5bd1907611e9a445cbf0b4152e5a9fb61963d260dc87234a0df017c8623f1e7217c759139e09f9fa2e37f05ceae13ae8e59f6e3d7f2
+  checksum: 10/0fa626e2051dfa5f1ea0da9e3776b5986d3700c261a8ba7c496e7ad89f4df0318920b7c286d3b310481712b378ffb7dee35ed782ff039e4166f4ba957a76b6df
   languageName: node
   linkType: hard
 
@@ -7356,7 +7373,7 @@ __metadata:
     eslint-plugin-react: "npm:^7.32.2"
     eslint-plugin-vitest: "npm:^0.3.10"
     gh-pages: "npm:^6.1.0"
-    happy-dom: "npm:^16.8.1"
+    happy-dom: "npm:^20.0.0"
     husky: "npm:^8.0.3"
     just-install: "npm:^2.0.1"
     lint-staged: "npm:^13.1.2"
@@ -8764,13 +8781,6 @@ __metadata:
   version: 3.3.3
   resolution: "web-streams-polyfill@npm:3.3.3"
   checksum: 10/8e7e13501b3834094a50abe7c0b6456155a55d7571312b89570012ef47ec2a46d766934768c50aabad10a9c30dd764a407623e8bfcc74fcb58495c29130edea9
-  languageName: node
-  linkType: hard
-
-"webidl-conversions@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "webidl-conversions@npm:7.0.0"
-  checksum: 10/4c4f65472c010eddbe648c11b977d048dd96956a625f7f8b9d64e1b30c3c1f23ea1acfd654648426ce5c743c2108a5a757c0592f02902cf7367adb7d14e67721
   languageName: node
   linkType: hard
 
