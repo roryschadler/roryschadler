@@ -1,6 +1,6 @@
-# Zapata AI, Platform Engineer
+# Zapata AI
 
-## March 2022 - June 2024
+## Platform Engineer, March 2022 - June 2024
 
 At Zapata AI, I contributed in several capacities across the tech stack and the
 organization, writing Platform microservices in Go, client-facing web
