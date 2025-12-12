@@ -1,4 +1,3 @@
-/* eslint-disable no-useless-escape */
 import * as React from 'react';
 import * as ReactDOM from 'react-dom/client';
 
