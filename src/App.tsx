@@ -1,6 +1,6 @@
 import { CssBaseline, ThemeProvider } from '@mui/material';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { createContext } from 'react';
-import { QueryClient, QueryClientProvider } from 'react-query';
 
 import './App.css';
 

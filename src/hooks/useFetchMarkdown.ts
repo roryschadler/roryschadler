@@ -1,4 +1,4 @@
-import { QueryKey, QueryOptions, useQuery } from 'react-query';
+import { QueryKey, QueryOptions, useQuery } from '@tanstack/react-query';
 
 import makeGitHubSource from 'utils/makeGitHubSource';
 
@@ -7,9 +7,9 @@ const useFetchMarkdown = (
   localPath: string,
   options?: QueryOptions<string>
 ) => {
-  return useQuery<string>(
-    key,
-    () =>
+  return useQuery<string>({
+    queryKey: key,
+    queryFn: () =>
       fetch(import.meta.env.DEV ? localPath : makeGitHubSource(localPath))
         .then((res) => {
           if (!res.ok) {
@@ -21,8 +21,8 @@ const useFetchMarkdown = (
           // if the fetch fails, try to get the markdown from the local copy
           return fetch(localPath).then((res) => res.text());
         }),
-    options
-  );
+    ...options,
+  });
 };
 
 export default useFetchMarkdown;
