@@ -12,13 +12,13 @@ describe('Item', () => {
   };
 
   it('renders the title', () => {
-    render(<Item {...mockItemProps} />);
+    render(<Item {...mockItemProps} key={mockItemProps.key} />);
     const titleElement = screen.getByText('Test Item');
     expect(titleElement).toBeInTheDocument();
   });
 
   it('renders the start date', () => {
-    render(<Item {...mockItemProps} />);
+    render(<Item {...mockItemProps} key={mockItemProps.key} />);
     const startDateElement = screen.getByText('January 2022', { exact: false });
     expect(startDateElement).toBeInTheDocument();
   });
@@ -28,7 +28,7 @@ describe('Item', () => {
       ...mockItemProps,
       endDate: 'December 2022',
     };
-    render(<Item {...itemPropsWithEndDate} />);
+    render(<Item {...itemPropsWithEndDate} key={itemPropsWithEndDate.key} />);
     const endDateElement = screen.getByText('December 2022', { exact: false });
     expect(endDateElement).toBeInTheDocument();
   });
@@ -38,7 +38,7 @@ describe('Item', () => {
       ...mockItemProps,
       subtitle: 'Test Subtitle',
     };
-    render(<Item {...itemPropsWithSubtitle} />);
+    render(<Item {...itemPropsWithSubtitle} key={itemPropsWithSubtitle.key} />);
     const subtitleElement = screen.getByText('Test Subtitle', { exact: false });
     expect(subtitleElement).toBeInTheDocument();
   });
@@ -60,7 +60,9 @@ describe('Item', () => {
           },
         ],
       };
-      render(<Item {...itemPropsWithSubItems} />);
+      render(
+        <Item {...itemPropsWithSubItems} key={itemPropsWithSubItems.key} />
+      );
       const subItemElement1 = screen.getByText('Test Sub Item 1 Text');
       expect(subItemElement1).toBeInTheDocument();
 
@@ -85,7 +87,12 @@ describe('Item', () => {
           },
         ],
       };
-      render(<Item {...itemPropsWithDisabledSubItem} />);
+      render(
+        <Item
+          {...itemPropsWithDisabledSubItem}
+          key={itemPropsWithDisabledSubItem.key}
+        />
+      );
       const subItemElement1 = screen.getByText('Test Sub Item 1 Text');
       expect(subItemElement1).toBeInTheDocument();
 
@@ -105,7 +112,12 @@ describe('Item', () => {
           },
         ],
       };
-      render(<Item {...itemPropsWithSubItemStartDate} />);
+      render(
+        <Item
+          {...itemPropsWithSubItemStartDate}
+          key={itemPropsWithSubItemStartDate.key}
+        />
+      );
       const subItemStartDateElement = screen.getByText('March 2022', {
         exact: false,
       });
@@ -118,7 +130,7 @@ describe('Item', () => {
       ...mockItemProps,
       last: false,
     };
-    render(<Item {...itemPropsNotLast} />);
+    render(<Item {...itemPropsNotLast} key={itemPropsNotLast.key} />);
     const dividerElement = screen.getByTestId('divider');
     expect(dividerElement).toBeInTheDocument();
   });
@@ -128,7 +140,7 @@ describe('Item', () => {
       ...mockItemProps,
       last: true,
     };
-    render(<Item {...itemPropsLast} />);
+    render(<Item {...itemPropsLast} key={itemPropsLast.key} />);
     const dividerElement = screen.queryByTestId('divider');
     expect(dividerElement).not.toBeInTheDocument();
   });
