@@ -614,10 +614,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/core-downloads-tracker@npm:^9.1.1":
-  version: 9.1.1
-  resolution: "@mui/core-downloads-tracker@npm:9.1.1"
-  checksum: 10/d036e08f7967664005f46c6820925ca2366997288bedfb8d5a34ec92880bb079a06a462e6ab2817ab777fabc85369ce19e8130b0d312e9eb3230e847b42f400a
+"@mui/core-downloads-tracker@npm:^9.1.2":
+  version: 9.1.2
+  resolution: "@mui/core-downloads-tracker@npm:9.1.2"
+  checksum: 10/25bf663e8798542a834faf4689148ee8860b7bad3b0587abc23fc9392511595cd217b6b990d5a680d78183f8642b6943e3aaa54f364d06f1f5b25a568dd77ade
   languageName: node
   linkType: hard
 
@@ -637,13 +637,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/material@npm:^9.1.1":
-  version: 9.1.1
-  resolution: "@mui/material@npm:9.1.1"
+"@mui/material@npm:^9.1.2":
+  version: 9.1.2
+  resolution: "@mui/material@npm:9.1.2"
   dependencies:
     "@babel/runtime": "npm:^7.29.2"
-    "@mui/core-downloads-tracker": "npm:^9.1.1"
-    "@mui/system": "npm:^9.1.1"
+    "@mui/core-downloads-tracker": "npm:^9.1.2"
+    "@mui/system": "npm:^9.1.2"
     "@mui/types": "npm:^9.1.1"
     "@mui/utils": "npm:^9.1.1"
     "@popperjs/core": "npm:^2.11.8"
@@ -669,7 +669,7 @@ __metadata:
       optional: true
     "@types/react":
       optional: true
-  checksum: 10/fc7db5209c9d42f41e68e46ff0da5a4c689be46ae66d4d369925db66da5235f9168d32e51c3bde504d330a669a3f6e3b5c8aa880033c932bec579f58d3731552
+  checksum: 10/0d8fc47f9024d3b6cd48bcb7b232312716a98b08fb97c5f5e9bc674f345b19ada5b28bc394874c99ca8db3da6a221c4dfca175dcbc27a056b1c334e7629b5f7a
   languageName: node
   linkType: hard
 
@@ -713,9 +713,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/system@npm:^9.1.1":
-  version: 9.1.1
-  resolution: "@mui/system@npm:9.1.1"
+"@mui/system@npm:^9.1.2":
+  version: 9.1.2
+  resolution: "@mui/system@npm:9.1.2"
   dependencies:
     "@babel/runtime": "npm:^7.29.2"
     "@mui/private-theming": "npm:^9.1.1"
@@ -737,7 +737,7 @@ __metadata:
       optional: true
     "@types/react":
       optional: true
-  checksum: 10/8689663d5a323a0efbd190f968bdd933ef7902eee92430e42f1bf7a55b072bb8884248024d4a456fa19198f094b5ee061accc3efad3dd22d2571628293c3be12
+  checksum: 10/4d311435388f6bc475a5590053ee8563fc19e308a10234c3b880b93b8f87e88c92fd7768bb0fcef9f7b1d85b0b7237ab63ebb650b7332cb1e498e791a3538333
   languageName: node
   linkType: hard
 
@@ -1255,6 +1255,15 @@ __metadata:
   version: 4.2.2
   resolution: "@types/crypto-js@npm:4.2.2"
   checksum: 10/a40fc5a9219fd33f54ba3e094c5e5ab2904d3106681a76f1029bb038976591e9c8959099963bf4474fde21c2d8d00c1f896445206a3a58f85588f9cb1bd96a9a
+  languageName: node
+  linkType: hard
+
+"@types/debug@npm:^4":
+  version: 4.1.13
+  resolution: "@types/debug@npm:4.1.13"
+  dependencies:
+    "@types/ms": "npm:*"
+  checksum: 10/5091d4ebda85236e6f4a6ecea552860e521e11d1d388d3f6255b40726f5a4a7cf1baa0d09f60853838e4cac6c12a13b14114d5f422ccecaee4d1d07dab349900
   languageName: node
   linkType: hard
 
@@ -2557,6 +2566,15 @@ __metadata:
   version: 2.0.1
   resolution: "character-reference-invalid@npm:2.0.1"
   checksum: 10/98d3b1a52ae510b7329e6ee7f6210df14f1e318c5415975d4c9e7ee0ef4c07875d47c6e74230c64551f12f556b4a8ccc24d9f3691a2aa197019e72a95e9297ee
+  languageName: node
+  linkType: hard
+
+"chokidar@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "chokidar@npm:5.0.0"
+  dependencies:
+    readdirp: "npm:^5.0.0"
+  checksum: 10/a1c2a4ee6ee81ba6409712c295a47be055fb9de1186dfbab33c1e82f28619de962ba02fc5f9d433daaedc96c35747460d8b2079ac2907de2c95e3f7cce913113
   languageName: node
   linkType: hard
 
@@ -4274,13 +4292,6 @@ __metadata:
     merge2: "npm:^1.4.1"
     slash: "npm:^3.0.0"
   checksum: 10/288e95e310227bbe037076ea81b7c2598ccbc3122d87abc6dab39e1eec309aa14f0e366a98cdc45237ffcfcbad3db597778c0068217dcb1950fef6249104e1b1
-  languageName: node
-  linkType: hard
-
-"globrex@npm:^0.1.2":
-  version: 0.1.2
-  resolution: "globrex@npm:0.1.2"
-  checksum: 10/81ce62ee6f800d823d6b7da7687f841676d60ee8f51f934ddd862e4057316d26665c4edc0358d4340a923ac00a514f8b67c787e28fe693aae16350f4e60d55e9
   languageName: node
   linkType: hard
 
@@ -6676,6 +6687,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"readdirp@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "readdirp@npm:5.0.0"
+  checksum: 10/a17a591b51d8b912083660df159e8bd17305dc1a9ef27c869c818bd95ff59e3a6496f97e91e724ef433e789d559d24e39496ea1698822eb5719606dc9c1a923d
+  languageName: node
+  linkType: hard
+
 "redent@npm:^3.0.0":
   version: 3.0.0
   resolution: "redent@npm:3.0.0"
@@ -6974,22 +6992,25 @@ __metadata:
     "@eslint/js": "npm:^10.0.1"
     "@fontsource/roboto": "npm:^5.2.10"
     "@mui/icons-material": "npm:^9.1.1"
-    "@mui/material": "npm:^9.1.1"
+    "@mui/material": "npm:^9.1.2"
     "@tanstack/react-query": "npm:^5.101.0"
     "@testing-library/dom": "npm:^10.4.1"
     "@testing-library/jest-dom": "npm:^6.9.1"
     "@testing-library/react": "npm:^16.3.2"
     "@testing-library/user-event": "npm:^14.6.1"
     "@types/crypto-js": "npm:^4.1.1"
+    "@types/debug": "npm:^4"
     "@types/react": "npm:^19.2.17"
     "@types/react-dom": "npm:^19.2.3"
     "@typescript-eslint/eslint-plugin": "npm:^8.61.1"
     "@typescript-eslint/parser": "npm:^8.61.1"
     "@vitejs/plugin-react": "npm:^6.0.2"
     "@vitest/eslint-plugin": "npm:^1.6.20"
+    chokidar: "npm:^5.0.0"
     crypto-js: "npm:^4.2.0"
     cypress: "npm:^15.17.0"
     cypress-vite: "npm:^1.10.1"
+    debug: "npm:^4.4.3"
     eslint: "npm:^10.5.0"
     eslint-config-prettier: "npm:^10.1.8"
     eslint-import-resolver-typescript: "npm:^4.4.5"
@@ -7009,7 +7030,6 @@ __metadata:
     react-markdown: "npm:^10.1.0"
     typescript: "npm:^6.0.3"
     vite: "npm:^8.0.16"
-    vite-tsconfig-paths: "npm:^6.1.1"
     vitest: "npm:^4.1.9"
   languageName: unknown
   linkType: soft
@@ -7808,20 +7828,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsconfck@npm:^3.0.3":
-  version: 3.1.6
-  resolution: "tsconfck@npm:3.1.6"
-  peerDependencies:
-    typescript: ^5.0.0
-  peerDependenciesMeta:
-    typescript:
-      optional: true
-  bin:
-    tsconfck: bin/tsconfck.js
-  checksum: 10/8574595286850273bf83319b4e67ca760088df3c36f7ca1425aaf797416672e854271bd31e75c9b3e1836ed5b66410c6bc38cbbda9c638a5416c6a682ed94132
-  languageName: node
-  linkType: hard
-
 "tsconfig-paths@npm:^3.15.0":
   version: 3.15.0
   resolution: "tsconfig-paths@npm:3.15.0"
@@ -8178,19 +8184,6 @@ __metadata:
     "@types/unist": "npm:^3.0.0"
     vfile-message: "npm:^4.0.0"
   checksum: 10/a5a85293c9eb8787aa42e180edaef00c13199a493d6ed82fecf13ab29a68526850788e22434d77808ea6b17a74e03ff899b9b4711df5b9eee75afcddd7c2e1fb
-  languageName: node
-  linkType: hard
-
-"vite-tsconfig-paths@npm:^6.1.1":
-  version: 6.1.1
-  resolution: "vite-tsconfig-paths@npm:6.1.1"
-  dependencies:
-    debug: "npm:^4.1.1"
-    globrex: "npm:^0.1.2"
-    tsconfck: "npm:^3.0.3"
-  peerDependencies:
-    vite: "*"
-  checksum: 10/f752bce4f3c5707f0df7af8a20294b1f325e26f50578b82c8262d851028616ebb1a3e73ab0789c55cf3c8da8d985e843193c0bec2cb31662c567ccdf137f1fd0
   languageName: node
   linkType: hard
 
