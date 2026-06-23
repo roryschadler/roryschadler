@@ -14,7 +14,7 @@ import GitHubButton from 'components/atomic/GitHubButton';
 import LinkedInButton from 'components/atomic/LinkedInButton';
 
 type Props = {
-  children: React.ReactElement;
+  children: React.ReactElement<{ elevation?: number }>;
 };
 
 const ElevationScroll = ({ children }: Props) => {
@@ -42,17 +42,20 @@ const HeaderBar = () => {
           <Grid
             container
             direction="row"
-            justifyContent="space-between"
+            sx={{ justifyContent: 'space-between', alignItems: 'center' }}
             spacing={1}
-            alignItems="center"
           >
-            <Grid item xs={6}>
-              <Typography component="h1" variant="h4" fontWeight="bolder">
+            <Grid size={6}>
+              <Typography
+                component="h1"
+                variant="h4"
+                sx={{ fontWeight: 'bolder' }}
+              >
                 Rory Schadler
               </Typography>
             </Grid>
-            <Grid item xs={6}>
-              <Stack direction="row-reverse" alignItems="center">
+            <Grid size={6}>
+              <Stack direction="row-reverse" sx={{ alignItems: 'center' }}>
                 <Avatar />
                 <LinkedInButton />
                 <GitHubButton />

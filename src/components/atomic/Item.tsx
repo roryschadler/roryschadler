@@ -45,16 +45,20 @@ const Item = ({
   return (
     <>
       <Stack aria-label={title}>
-        <Stack direction="row" justifyContent="space-between">
+        <Stack direction="row" sx={{ justifyContent: 'space-between' }}>
           <Typography
             variant="body1"
-            display="inline"
+            sx={{ display: 'inline' }}
             aria-label={[ariaTitle, ariaSubtitle].join(', ')}
           >
             <b>{title}</b>
             {subtitle && `, ${subtitle}`}
           </Typography>
-          <Typography fontWeight="bold" variant="body1" aria-label="Dates">
+          <Typography
+            sx={{ fontWeight: 'bold' }}
+            variant="body1"
+            aria-label="Dates"
+          >
             {startDate} — {endDate ?? 'Present'}
           </Typography>
         </Stack>

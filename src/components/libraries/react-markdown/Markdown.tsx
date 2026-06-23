@@ -6,12 +6,12 @@ const LI = styled('li')({});
 
 export const defaultComponentsMap: Components = {
   h1: ({ children }) => (
-    <Typography variant="h5" component="h3" fontWeight="bold">
+    <Typography variant="h5" component="h3" sx={{ fontWeight: 'bold' }}>
       {children}
     </Typography>
   ),
   h2: ({ children }) => (
-    <Typography variant="h6" component="h4" fontWeight="normal">
+    <Typography variant="h6" component="h4" sx={{ fontWeight: 'normal' }}>
       {children}
     </Typography>
   ),
