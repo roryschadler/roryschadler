@@ -4,10 +4,17 @@ const stubMatchMedia = (prefersDark: boolean, win: Cypress.AUTWindow) => {
     .withArgs('(prefers-color-scheme: dark)')
     .returns({
       matches: prefersDark,
+      media: '(prefers-color-scheme: dark)',
+      onchange: null,
       // eslint-disable-next-line @typescript-eslint/no-empty-function
       addListener: () => {},
       // eslint-disable-next-line @typescript-eslint/no-empty-function
       removeListener: () => {},
+      // eslint-disable-next-line @typescript-eslint/no-empty-function
+      addEventListener: () => {},
+      // eslint-disable-next-line @typescript-eslint/no-empty-function
+      removeEventListener: () => {},
+      dispatchEvent: () => false,
     });
 };
 

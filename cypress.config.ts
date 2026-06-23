@@ -1,5 +1,5 @@
 import { defineConfig } from 'cypress';
-import vitePreprocessor from 'cypress-vite';
+import { vitePreprocessor } from 'cypress-vite';
 
 export default defineConfig({
   projectId: '39ri8w',
