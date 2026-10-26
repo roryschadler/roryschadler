@@ -32,7 +32,7 @@ export default defineConfig(() => ({
   test: {
     globals: true,
     environment: 'happy-dom',
-    setupFiles: resolve(__dirname, 'tests/setupTests.ts'),
+    setupFiles: resolve(import.meta.dirname, 'tests/setupTests.ts'),
     watch: false,
     exclude: ['**/node_modules/**', '**/dist/**', 'cypress/**'],
   },
