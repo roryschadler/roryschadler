@@ -42,7 +42,11 @@ const HeaderBar = () => {
           <Grid
             container
             direction="row"
-            sx={{ justifyContent: 'space-between', alignItems: 'center' }}
+            sx={{
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              flexGrow: 1,
+            }}
             spacing={1}
           >
             <Grid size={6}>
