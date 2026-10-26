@@ -10,7 +10,11 @@ import {
 const GitHubButton = () => {
   const theme = useTheme();
   return (
-    <Link target="_blank" href="https://github.com/roryschadler">
+    <Link
+      target="_blank"
+      href="https://github.com/roryschadler"
+      aria-label="GitHub"
+    >
       <Tooltip title="GitHub">
         <IconButton
           size={

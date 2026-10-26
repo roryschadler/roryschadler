@@ -11,18 +11,16 @@ describe('header bar', () => {
 
   it('should render the github button', () => {
     cy.visit('/');
-    cy.getByTestId('GitHubIcon').should('exist').and('be.visible');
-    cy.getByLabel('GitHub')
-      .parent()
+    cy.get('a[aria-label="GitHub"]')
+      .should('be.visible')
       .should('have.attr', 'href')
       .and('match', /github\.com/);
   });
 
   it('should render the linkedin button', () => {
     cy.visit('/');
-    cy.getByTestId('LinkedInIcon').should('exist').and('be.visible');
-    cy.getByLabel('LinkedIn')
-      .parent()
+    cy.get('a[aria-label="LinkedIn"]')
+      .should('be.visible')
       .should('have.attr', 'href')
       .and('match', /linkedin\.com/);
   });

@@ -10,7 +10,11 @@ import {
 const LinkedInButton = () => {
   const theme = useTheme();
   return (
-    <Link target="_blank" href="https://www.linkedin.com/in/roryschadler/">
+    <Link
+      target="_blank"
+      href="https://www.linkedin.com/in/roryschadler/"
+      aria-label="LinkedIn"
+    >
       <Tooltip title="LinkedIn">
         <IconButton
           size={

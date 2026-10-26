@@ -5,7 +5,7 @@ import GitHubButton from '../GitHubButton';
 describe('GitHubButton', () => {
   it('renders a link to GitHub', () => {
     render(<GitHubButton />);
-    const githubButton = screen.getByRole('link');
+    const githubButton = screen.getByRole('link', { name: 'GitHub' });
     expect(githubButton).toBeInTheDocument();
     expect(githubButton).toHaveAttribute(
       'href',

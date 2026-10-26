@@ -5,7 +5,7 @@ import LinkedInButton from '../LinkedInButton';
 describe('LinkedInButton', () => {
   it('renders a link to LinkedIn', () => {
     render(<LinkedInButton />);
-    const linkedinButton = screen.getByRole('link');
+    const linkedinButton = screen.getByRole('link', { name: 'LinkedIn' });
     expect(linkedinButton).toBeInTheDocument();
     expect(linkedinButton).toHaveAttribute(
       'href',
