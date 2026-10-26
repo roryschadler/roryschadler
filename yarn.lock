@@ -4103,9 +4103,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"happy-dom@npm:^20.10.6":
-  version: 20.10.6
-  resolution: "happy-dom@npm:20.10.6"
+"happy-dom@npm:^21.0.4":
+  version: 21.0.4
+  resolution: "happy-dom@npm:21.0.4"
   dependencies:
     "@types/node": "npm:>=20.0.0"
     "@types/whatwg-mimetype": "npm:^3.0.2"
@@ -4114,7 +4114,7 @@ __metadata:
     entities: "npm:^7.0.1"
     whatwg-mimetype: "npm:^3.0.0"
     ws: "npm:^8.21.0"
-  checksum: 10/255aef5cd4f9b425dacc9e8c29b13e0366b6cf014fbcd838bed887999b2c67bf854c31311fbfa28adca163ef9056377465a3673c0054737243e556d98467d5ef
+  checksum: 10/708a07432283cab0a29a10571b06cf27c0e30a933bf5f7fe948e18f78ce3875127b09fbed9aa7c6c5d23b06f4dad824eb73bc7a0cbe356febf5f66efb36aabce
   languageName: node
   linkType: hard
 
@@ -6743,7 +6743,7 @@ __metadata:
     eslint-plugin-react: "npm:^7.37.5"
     gh-pages: "npm:^6.1.0"
     globals: "npm:^17.7.0"
-    happy-dom: "npm:^20.10.6"
+    happy-dom: "npm:^21.0.4"
     husky: "npm:^9.1.7"
     just-install: "npm:^2.0.1"
     lint-staged: "npm:^17.0.8"
