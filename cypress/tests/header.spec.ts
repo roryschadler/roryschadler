@@ -11,16 +11,18 @@ describe('header bar', () => {
 
   it('should render the github button', () => {
     cy.visit('/');
-    cy.get('a[aria-label="GitHub"]')
+    cy.getByLabel('GitHub')
       .should('be.visible')
+      .parent()
       .should('have.attr', 'href')
       .and('match', /github\.com/);
   });
 
   it('should render the linkedin button', () => {
     cy.visit('/');
-    cy.get('a[aria-label="LinkedIn"]')
+    cy.getByLabel('LinkedIn')
       .should('be.visible')
+      .parent()
       .should('have.attr', 'href')
       .and('match', /linkedin\.com/);
   });
